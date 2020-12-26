@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.musta.buyandsellinlebanon.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_categories"
+        android:name="com.musta.buyandsellinlebanon.ui.categories.CategoriesFragment"
+        android:label="@string/categories"
+        tools:layout="@layout/fragment_categories" />
+<!--    <fragment-->
+<!--        android:id="@+id/nav_collect_and_win"-->
+<!--        android:name="com.musta.buyandsellinlebanon.ui.collectandwin.CollectAndWinFragment"-->
+<!--        android:label="@string/collect_and_win"-->
+<!--        tools:layout="@layout/fragment_collect_and_win" />-->
+    <fragment
+        android:id="@+id/nav_my_ads"
+        android:name="com.musta.buyandsellinlebanon.ui.myads.MyAdsFragment"
+        android:label="@string/my_ads"
+        tools:layout="@layout/fragment_my_ads" />
+
+    <!--    <fragment-->
+    <!--        android:id="@+id/nav_slideshow"-->
+    <!--        android:name="com.musta.buyandsellinlebanon.ui.slideshow.SlideshowFragment"-->
+    <!--        android:label="@string/menu_slideshow"-->
+    <!--        tools:layout="@layout/fragment_slideshow" />-->
+
+    <!--    <fragment-->
+    <!--        android:id="@+id/nav_tools"-->
+    <!--        android:name="com.musta.buyandsellinlebanon.ui.tools.ToolsFragment"-->
+    <!--        android:label="@string/menu_tools"-->
+    <!--        tools:layout="@layout/fragment_tools" />-->
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.musta.buyandsellinlebanon.ui.share.ShareFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_share" />
+    <!--    <fragment-->
+    <!--        android:id="@+id/nav_review"-->
+    <!--        android:name="com.musta.buyandsellinlebanon.ui.review.ReviewAppFragment"-->
+    <!--        android:label="@string/menu_review"-->
+    <!--        tools:layout="@layout/fragment_review_app" />-->
+
+    <!--    <fragment-->
+    <!--        android:id="@+id/nav_sign_in"-->
+    <!--        android:name="com.musta.buyandsellinlebanon.ui.signin.SignInFragment"-->
+    <!--        android:label="@string/sign_in"-->
+    <!--        tools:layout="@layout/sign_in_fragment" />-->
+
+    <!--    <fragment-->
+    <!--        android:id="@+id/nav_send"-->
+    <!--        android:name="com.musta.buyandsellinlebanon.ui.send.SendFragment"-->
+    <!--        android:label="@string/menu_send"-->
+    <!--        tools:layout="@layout/fragment_send" />-->
+</navigation>

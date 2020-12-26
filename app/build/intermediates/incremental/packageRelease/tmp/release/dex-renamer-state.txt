@@ -1,0 +1,7 @@
+#Tue Oct 20 21:13:28 EEST 2020
+base.0=E\:\\android projects\\BuyandSellInLebanon\\app\\build\\intermediates\\dex\\release\\out\\classes.dex
+path.1=classes2.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=E\:\\android projects\\BuyandSellInLebanon\\app\\build\\intermediates\\dex\\release\\out\\classes2.dex

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "254722489466",
+    "firebase_url": "https://buy-and-sell-lebanon-344de.firebaseio.com",
+    "project_id": "buy-and-sell-lebanon-344de",
+    "storage_bucket": "buy-and-sell-lebanon-344de.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:254722489466:android:2c8d1b37e6ee9f174ecfc3",
+        "android_client_info": {
+          "package_name": "com.musta.buyandsellinlebanon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "254722489466-1i2m8jb3uug1l3cpger3gv40pmgg0shc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBopwrMIMExRQ8UQ2NymVtN613iGRwZzs8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "254722489466-1i2m8jb3uug1l3cpger3gv40pmgg0shc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="30dp"
+        android:orientation="vertical"
+        tools:context=".ads.CreateAdActivity">
+
+        <!--        <Button-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:onClick="uploadImages"-->
+        <!--            android:text="upload test" />-->
+        <!--    <ImageView-->
+        <!--        android:id="@+id/testImageView"-->
+        <!--        android:layout_width="60dp"-->
+        <!--        android:layout_height="60dp"/>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/images"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_form_title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/how_much_images"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="5dp"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/of_8"
+                android:textColor="@android:color/black"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="@dimen/image_width_create_ad"
+                    android:layout_height="@dimen/image_height_create_ad"
+                    android:layout_margin="@dimen/image_margin_create_ad"
+                    android:padding="@dimen/image_padding_create_ad"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/image2"
+                    android:layout_width="@dimen/image_width_create_ad"
+                    android:layout_height="@dimen/image_height_create_ad"
+                    android:layout_margin="@dimen/image_margin_create_ad"
+                    android:padding="@dimen/image_padding_create_ad"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/image3"
+                    android:layout_width="@dimen/image_width_create_ad"
+                    android:layout_height="@dimen/image_height_create_ad"
+                    android:layout_margin="@dimen/image_margin_create_ad"
+                    android:padding="@dimen/image_padding_create_ad"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/image4"
+                    android:layout_width="@dimen/image_width_create_ad"
+                    android:layout_height="@dimen/image_height_create_ad"
+                    android:layout_margin="@dimen/image_margin_create_ad"
+                    android:padding="@dimen/image_padding_create_ad"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/image5"
+                    android:layout_width="@dimen/image_width_create_ad"
+                    android:layout_height="@dimen/image_height_create_ad"
+                    android:layout_margin="@dimen/image_margin_create_ad"
+                    android:padding="@dimen/image_padding_create_ad"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/image6"
+                    android:layout_width="@dimen/image_width_create_ad"
+                    android:layout_height="@dimen/image_height_create_ad"
+                    android:layout_margin="@dimen/image_margin_create_ad"
+                    android:padding="@dimen/image_padding_create_ad"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/image7"
+                    android:layout_width="@dimen/image_width_create_ad"
+                    android:layout_height="@dimen/image_height_create_ad"
+                    android:layout_margin="@dimen/image_margin_create_ad"
+                    android:padding="@dimen/image_padding_create_ad"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/image8"
+                    android:layout_width="@dimen/image_width_create_ad"
+                    android:layout_height="@dimen/image_height_create_ad"
+                    android:layout_margin="@dimen/image_margin_create_ad"
+                    android:padding="@dimen/image_padding_create_ad"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:layout_width="@dimen/image_width_create_ad"
+                    android:layout_height="@dimen/image_height_create_ad"
+                    android:layout_margin="@dimen/image_margin_create_ad"
+                    android:background="@color/lightGrey"
+                    android:onClick="addImages"
+                    android:padding="@dimen/image_padding_create_ad"
+                    android:scaleType="centerCrop">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_add_circle_black_24dp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/title_ad_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/title"
+                android:maxLength="100" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/description_ad_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/description"
+                android:maxLength="600" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/price_ad_form"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/price"
+                    android:inputType="number"
+                    android:maxLength="12" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RadioGroup
+                android:id="@+id/radioGroupCurrency"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_lira"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/lira" />
+
+                <RadioButton
+                    android:id="@+id/radio_dollar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/dollar" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/distance_covered_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/distance_covered"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/distance_covered"
+                android:inputType="number"
+                android:maxLength="10" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/car_year_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/car_year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/year"
+                android:inputType="number"
+                android:maxLength="4" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/phone"
+                android:inputType="number"
+                android:maxLength="8" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/place" />
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/spinnerPlaces"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/text_box_layout"
+                android:paddingLeft="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/spinnerCarsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/car_type" />
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/spinnerCars"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/text_box_layout"
+                android:paddingLeft="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/spinnerCarsModelLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/car_model" />
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/spinnerCarsModel"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/text_box_layout"
+                android:paddingLeft="10dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/transmission_type_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/transmission_type" />
+
+            <Spinner
+                android:id="@+id/transmission_type"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/text_box_layout"
+                android:paddingLeft="10dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
