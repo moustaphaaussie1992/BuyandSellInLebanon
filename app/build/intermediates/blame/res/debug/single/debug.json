@@ -264,12 +264,12 @@
         "source": "E:\\android projects\\BuyandSellInLebanon\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_call_black_24dp.png"
     },
     {
-        "merged": "E:\\android projects\\BuyandSellInLebanon\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "E:\\android projects\\BuyandSellInLebanon\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
-    },
-    {
         "merged": "E:\\android projects\\BuyandSellInLebanon\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_add_circle_black_24dp.png.flat",
         "source": "E:\\android projects\\BuyandSellInLebanon\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_add_circle_black_24dp.png"
+    },
+    {
+        "merged": "E:\\android projects\\BuyandSellInLebanon\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "E:\\android projects\\BuyandSellInLebanon\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
         "merged": "E:\\android projects\\BuyandSellInLebanon\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_before_create_ad.xml.flat",
@@ -392,12 +392,12 @@
         "source": "E:\\android projects\\BuyandSellInLebanon\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_notifications_none_black_24dp.xml"
     },
     {
-        "merged": "E:\\android projects\\BuyandSellInLebanon\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_list_black_24dp.png.flat",
-        "source": "E:\\android projects\\BuyandSellInLebanon\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_list_black_24dp.png"
-    },
-    {
         "merged": "E:\\android projects\\BuyandSellInLebanon\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_share_black_24dp.xml.flat",
         "source": "E:\\android projects\\BuyandSellInLebanon\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_share_black_24dp.xml"
+    },
+    {
+        "merged": "E:\\android projects\\BuyandSellInLebanon\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_list_black_24dp.png.flat",
+        "source": "E:\\android projects\\BuyandSellInLebanon\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_list_black_24dp.png"
     },
     {
         "merged": "E:\\android projects\\BuyandSellInLebanon\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_share_black_24dp.png.flat",

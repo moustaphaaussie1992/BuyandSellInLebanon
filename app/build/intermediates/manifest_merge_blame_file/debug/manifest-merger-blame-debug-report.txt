@@ -1,7 +1,7 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="com.musta.buyandsellinlebanon"
-4    android:versionCode="22"
+4    android:versionCode="24"
 5    android:versionName="1.0" >
 6
 7    <uses-sdk
@@ -515,11 +515,11 @@
 274-->[com.google.android.gms:play-services-ads-lite:19.3.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\97de20255e3523c057f5fc2c4d767c7b\jetified-play-services-ads-lite-19.3.0\AndroidManifest.xml:39:13-36
 275
 276        <meta-data
-276-->[com.google.android.gms:play-services-basement:17.1.1] C:\Users\user\.gradle\caches\transforms-2\files-2.1\b5bba9f4aab51de1db8dfab15e0883a7\jetified-play-services-basement-17.1.1\AndroidManifest.xml:23:9-25:69
+276-->[com.google.android.gms:play-services-basement:17.1.1] C:\Users\user\.gradle\caches\transforms-2\files-2.1\ce3a95b730839c03bdfcd610b0bee09d\jetified-play-services-basement-17.1.1\AndroidManifest.xml:23:9-25:69
 277            android:name="com.google.android.gms.version"
-277-->[com.google.android.gms:play-services-basement:17.1.1] C:\Users\user\.gradle\caches\transforms-2\files-2.1\b5bba9f4aab51de1db8dfab15e0883a7\jetified-play-services-basement-17.1.1\AndroidManifest.xml:24:13-58
+277-->[com.google.android.gms:play-services-basement:17.1.1] C:\Users\user\.gradle\caches\transforms-2\files-2.1\ce3a95b730839c03bdfcd610b0bee09d\jetified-play-services-basement-17.1.1\AndroidManifest.xml:24:13-58
 278            android:value="@integer/google_play_services_version" />
-278-->[com.google.android.gms:play-services-basement:17.1.1] C:\Users\user\.gradle\caches\transforms-2\files-2.1\b5bba9f4aab51de1db8dfab15e0883a7\jetified-play-services-basement-17.1.1\AndroidManifest.xml:25:13-66
+278-->[com.google.android.gms:play-services-basement:17.1.1] C:\Users\user\.gradle\caches\transforms-2\files-2.1\ce3a95b730839c03bdfcd610b0bee09d\jetified-play-services-basement-17.1.1\AndroidManifest.xml:25:13-66
 279
 280        <provider
 280-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\399fb33a8ad56b04bb7efb3af3e16457\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
