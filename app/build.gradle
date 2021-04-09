@@ -3,16 +3,16 @@ apply plugin: 'com.android.application'
 android {
     signingConfigs {
         somesignname {
-//            storeFile file('E:\\android projects\\BuyandSellInLebanon\\keystore.jks')
-//            storePassword '123456:P'
-//            keyAlias = 'key0'
-//            keyPassword '123456:P'
+            storeFile file('C:\\Users\\user\\AndroidStudioProjects\\BuyandSellInLebanon\\keystore.jks')
+            storePassword '123456:P'
+            keyAlias = 'key0'
+            keyPassword '123456:P'
         }
         debug {
-//            storeFile file('E:\\android projects\\BuyandSellInLebanon\\keystore.jks')
-//            storePassword '123456:P'
-//            keyPassword '123456:P'
-//            keyAlias = 'key0'
+            storeFile file('C:\\Users\\user\\AndroidStudioProjects\\BuyandSellInLebanon\\keystore.jks')
+            storePassword '123456:P'
+            keyPassword '123456:P'
+            keyAlias = 'key0'
         }
     }
     compileSdkVersion 29

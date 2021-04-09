@@ -59,7 +59,7 @@ public class ShowAdsByAdTypeActivity extends AppCompatActivity {
                         @Override
                         public void onResponse(ShowAllAdsModel[] response) {
                             dialog.dismiss();
-                            ShowAllAdsRVAdapter showAllAdsRVAdapter = new ShowAllAdsRVAdapter(Arrays.asList(response));
+                            ShowAllAdsRVAdapter showAllAdsRVAdapter = new ShowAllAdsRVAdapter(Arrays.asList(response),getApplicationContext());
                             recyclerview.setAdapter(showAllAdsRVAdapter);
                         }
                     },

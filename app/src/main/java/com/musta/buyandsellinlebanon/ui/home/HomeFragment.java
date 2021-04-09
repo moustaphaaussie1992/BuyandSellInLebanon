@@ -99,7 +99,7 @@ public class HomeFragment extends Fragment {
                     @Override
                     public void onResponse(ShowAllAdsModel[] response) {
                         dialog.dismiss();
-                        ShowAllAdsRVAdapter showAllAdsRVAdapter = new ShowAllAdsRVAdapter(Arrays.asList(response));
+                        ShowAllAdsRVAdapter showAllAdsRVAdapter = new ShowAllAdsRVAdapter(Arrays.asList(response),getContext());
                         recyclerviewHome.setAdapter(showAllAdsRVAdapter);
                     }
                 },

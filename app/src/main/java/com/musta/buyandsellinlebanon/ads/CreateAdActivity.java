@@ -83,6 +83,7 @@ public class CreateAdActivity extends AppCompatActivity implements View.OnClickL
     private String isSale = "";
     private String name = "";
     private String username = "";
+    ProgressDialog dialog;
 
 
     private TextView how_much_images;
@@ -364,6 +365,8 @@ public class CreateAdActivity extends AppCompatActivity implements View.OnClickL
 
     public void createAdNadUploadImages() {
         try {
+            dialog = ProgressDialog.show(CreateAdActivity.this, "",
+                    "Please wait...", true);
             List<String> images = new ArrayList<>();
             for (int i = 0; i < userSelectedImageUriList.size(); i++) {
                 final InputStream imageStream = getContentResolver().
@@ -378,6 +381,7 @@ public class CreateAdActivity extends AppCompatActivity implements View.OnClickL
             SendImage(images);
 
         } catch (IOException e) {
+            dialog.dismiss();
             e.printStackTrace();
         }
     }
@@ -409,8 +413,8 @@ public class CreateAdActivity extends AppCompatActivity implements View.OnClickL
     }
 
     private void SendImage(final List<String> images) {
-        final ProgressDialog dialog = ProgressDialog.show(CreateAdActivity.this, "",
-                "Please wait...", true);
+//        final ProgressDialog dialog = ProgressDialog.show(CreateAdActivity.this, "",
+//                "Please wait...", true);
 
         String url = NetworkHelper.getUrl(NetworkHelper.ACTION_CREATE_AD);
         final StringRequest stringRequest = new StringRequest(Request.Method.POST, url,

@@ -3,6 +3,7 @@ package com.musta.buyandsellinlebanon.ui.home;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,6 +17,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.InterstitialAd;
 import com.musta.buyandsellinlebanon.R;
 import com.musta.buyandsellinlebanon.ads.AdDetailActivity;
 import com.musta.buyandsellinlebanon.ui.home.models.ShowAllAdsModel;
@@ -30,6 +33,8 @@ public class ShowAllAdsRVAdapter extends RecyclerView.Adapter<ShowAllAdsRVAdapte
 
     List<ShowAllAdsModel> showAllAdsModels;
     Context context;
+    Context myContext;
+    private InterstitialAd mInterstitialAd;
 
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
@@ -48,11 +53,18 @@ public class ShowAllAdsRVAdapter extends RecyclerView.Adapter<ShowAllAdsRVAdapte
             textViewCreetionDate = view.findViewById(R.id.creation_date);
             textViewPlace = view.findViewById(R.id.place_name);
 //            shareAdButton = view.findViewById(R.id.shareAdButton);
+
         }
     }
 
-    public ShowAllAdsRVAdapter(List<ShowAllAdsModel> showAllAdsModels) {
+    public ShowAllAdsRVAdapter(List<ShowAllAdsModel> showAllAdsModels,Context myContext) {
         this.showAllAdsModels = showAllAdsModels;
+
+
+        mInterstitialAd = new InterstitialAd(myContext);
+        mInterstitialAd.setAdUnitId(myContext.getString(R.string.interstitialAd));
+//        mInterstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
+        mInterstitialAd.loadAd(new AdRequest.Builder().build());
     }
 
     @Override
@@ -101,7 +113,16 @@ public class ShowAllAdsRVAdapter extends RecyclerView.Adapter<ShowAllAdsRVAdapte
                     priceUnitStr = context.getString(R.string.lira);
                 }
                 intent.putExtra("price", showAd.getPrice() + priceUnitStr);
+
                 context.startActivity(intent);
+
+                if (mInterstitialAd.isLoaded()) {
+                    mInterstitialAd.show();
+                    mInterstitialAd.loadAd(new AdRequest.Builder().build());
+                } else {
+                    Log.d("dsdsddd", "The interstitial wasn't loaded yet.");
+                }
+
             }
         });
 //        holder.shareAdButton.setOnClickListener(new View.OnClickListener() {

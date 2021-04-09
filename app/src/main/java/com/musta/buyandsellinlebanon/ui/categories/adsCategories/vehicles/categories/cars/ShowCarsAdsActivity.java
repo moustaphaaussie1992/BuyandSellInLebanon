@@ -73,7 +73,7 @@ public class ShowCarsAdsActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(ShowAllAdsModel[] response) {
 
-                        ShowAllAdsRVAdapter showAllCarsRVAdapter = new ShowAllAdsRVAdapter(Arrays.asList(response));
+                        ShowAllAdsRVAdapter showAllCarsRVAdapter = new ShowAllAdsRVAdapter(Arrays.asList(response),getApplicationContext());
                         showAllCarsRV.setAdapter(showAllCarsRVAdapter);
                     }
                 },
