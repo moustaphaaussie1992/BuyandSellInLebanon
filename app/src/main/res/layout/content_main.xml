@@ -19,16 +19,28 @@
         app:layout_constraintTop_toTopOf="parent"
         app:navGraph="@navigation/mobile_navigation" />
 
-    <Button
+<!--    <Button-->
+<!--        android:id="@+id/create_new_ad"-->
+<!--        style="@style/Widget.AppCompat.Button.Colored"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_above="@+id/adView"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_margin="20dp"-->
+<!--        android:background="@drawable/button_rounded_corners"-->
+<!--        android:text="@string/create_new_ad" />-->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/create_new_ad"
-        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:layout_above="@+id/adView"
         android:layout_alignParentRight="true"
-        android:layout_margin="20dp"
-        android:background="@drawable/button_rounded_corners"
-        android:text="@string/create_new_ad" />
+
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/ic_add"
+        tools:ignore="VectorDrawableCompat" />
 
     <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
         android:id="@+id/adView"

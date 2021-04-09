@@ -1,26 +1,23 @@
 package com.musta.buyandsellinlebanon.ads;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-import androidx.viewpager.widget.ViewPager;
-
-import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.viewpager.widget.ViewPager;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.DefaultRetryPolicy;
@@ -31,10 +28,6 @@ import com.android.volley.RetryPolicy;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.google.android.gms.ads.AdListener;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.InterstitialAd;
-import com.google.android.gms.ads.LoadAdError;
 import com.musta.buyandsellinlebanon.R;
 import com.musta.buyandsellinlebanon.ads.adapters.CommentsRecyclerViewAdapter;
 import com.musta.buyandsellinlebanon.ads.adapters.ViewPagerAdapter;
@@ -44,16 +37,12 @@ import com.musta.buyandsellinlebanon.ads.models.AdDetailModel;
 import com.musta.buyandsellinlebanon.ads.models.AdDetailPicturesModel;
 import com.musta.buyandsellinlebanon.ads.models.Comments;
 import com.musta.buyandsellinlebanon.preferences.UserPreferences;
-import com.musta.buyandsellinlebanon.ui.home.ShowAllAdsRVAdapter;
-import com.musta.buyandsellinlebanon.ui.home.models.ShowAllAdsModel;
 import com.musta.buyandsellinlebanon.utils.FirebaseUtils;
 import com.musta.buyandsellinlebanon.utils.network.GsonRequest;
 import com.musta.buyandsellinlebanon.utils.network.NetworkHelper;
 import com.musta.buyandsellinlebanon.utils.network.VolleySingleton;
 import com.rd.PageIndicatorView;
 import com.rd.animation.type.AnimationType;
-
-import org.w3c.dom.Text;
 
 import java.util.Arrays;
 import java.util.HashMap;

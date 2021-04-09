@@ -37,6 +37,7 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.dynamiclinks.DynamicLink;
 import com.google.firebase.dynamiclinks.FirebaseDynamicLinks;
@@ -94,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
     CarsSubViewModel carsSubViewModel;
     private AdView mAdView;
     //    private InterstitialAd mInterstitialAd;
-    Button create_new_ad;
+    FloatingActionButton create_new_ad;
     int countUnread; 
 
     private boolean shouldLoadAds;

@@ -1,20 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\android projects\\BuyandSellInLebanon\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
+            "outputFile": "C:\\Users\\Hadi\\AndroidStudioProjects\\BuyandSellInLebanon\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\user\\.gradle\\caches\\transforms-2\\files-2.1\\e8ae68a96dbe5b66b4f36b5d70921866\\work-runtime-2.2.0\\res\\values-v23\\values-v23.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,121",
-                        "endColumns": "65,62",
-                        "endOffsets": "116,179"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\user\\.gradle\\caches\\transforms-2\\files-2.1\\a518426e46579177e15d07df26dcbd4d\\appcompat-1.0.2\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\Hadi\\.gradle\\caches\\transforms-2\\files-2.1\\a518426e46579177e15d07df26dcbd4d\\appcompat-1.0.2\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
@@ -33,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\user\\.gradle\\caches\\transforms-2\\files-2.1\\9e025505c94c04007a8190f74982d1e9\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\Hadi\\.gradle\\caches\\transforms-2\\files-2.1\\9e025505c94c04007a8190f74982d1e9\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -49,6 +39,16 @@
                         "endLines": "41",
                         "endColumns": "12",
                         "endOffsets": "2920"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Hadi\\.gradle\\caches\\transforms-2\\files-2.1\\e8ae68a96dbe5b66b4f36b5d70921866\\work-runtime-2.2.0\\res\\values-v23\\values-v23.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,121",
+                        "endColumns": "65,62",
+                        "endOffsets": "116,179"
                     }
                 }
             ]

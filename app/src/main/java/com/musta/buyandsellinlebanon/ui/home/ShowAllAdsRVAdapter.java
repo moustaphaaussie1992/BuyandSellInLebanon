@@ -47,7 +47,7 @@ public class ShowAllAdsRVAdapter extends RecyclerView.Adapter<ShowAllAdsRVAdapte
             textViewPrice = view.findViewById(R.id.price);
             textViewCreetionDate = view.findViewById(R.id.creation_date);
             textViewPlace = view.findViewById(R.id.place_name);
-            shareAdButton = view.findViewById(R.id.shareAdButton);
+//            shareAdButton = view.findViewById(R.id.shareAdButton);
         }
     }
 
@@ -82,7 +82,7 @@ public class ShowAllAdsRVAdapter extends RecyclerView.Adapter<ShowAllAdsRVAdapte
             priceUnitStr = context.getString(R.string.lira);
         }
         holder.textViewPrice.setText(showAd.getPrice() + priceUnitStr);
-        holder.textViewCreetionDate.setText(showAd.getCreation_date());
+        holder.textViewCreetionDate.setText(showAd.getCreation_date().substring(0, 10));
         holder.textViewPlace.setText(showAd.getPlace_name());
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -104,13 +104,13 @@ public class ShowAllAdsRVAdapter extends RecyclerView.Adapter<ShowAllAdsRVAdapte
                 context.startActivity(intent);
             }
         });
-        holder.shareAdButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Uri uri = Uri.parse("https://play.google.com/?ad=" + showAd.getId());
-                FirebaseUtils.buildDeepLinkVideo(context, uri, imagePath, showAd.getTitle(), showAd.getDescription());
-            }
-        });
+//        holder.shareAdButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Uri uri = Uri.parse("https://play.google.com/?ad=" + showAd.getId());
+//                FirebaseUtils.buildDeepLinkVideo(context, uri, imagePath, showAd.getTitle(), showAd.getDescription());
+//            }
+//        });
 
     }
 
