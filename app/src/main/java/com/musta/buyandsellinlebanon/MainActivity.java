@@ -39,6 +39,7 @@ import androidx.navigation.ui.NavigationUI;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.dynamiclinks.DynamicLink;
 import com.google.firebase.dynamiclinks.FirebaseDynamicLinks;
 import com.google.firebase.dynamiclinks.PendingDynamicLinkData;
@@ -148,6 +149,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         }
+
+        FirebaseApp.initializeApp(this);
 
         FirebaseMessaging.getInstance().subscribeToTopic("main")
                 .addOnCompleteListener(new OnCompleteListener<Void>() {

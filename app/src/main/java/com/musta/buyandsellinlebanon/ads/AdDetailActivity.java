@@ -111,7 +111,9 @@ public class AdDetailActivity extends AppCompatActivity {
                         @Override
                         public void onResponse(final AdDetailModel response) {
 //                            Log.d("myresponse", response.toString());
-                            setupViewPager(response.pictures);
+                            if(response.pictures != null) {
+                                setupViewPager(response.pictures);
+                            }
                             if (response.adDetail != null) {
                                 setupDetailsCar(response.adDetail);
                             }
