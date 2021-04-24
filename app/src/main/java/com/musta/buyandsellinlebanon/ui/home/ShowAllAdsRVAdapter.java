@@ -83,6 +83,7 @@ public class ShowAllAdsRVAdapter extends RecyclerView.Adapter<ShowAllAdsRVAdapte
         final String imagePath = NetworkHelper.IMAGES_PATH + showAd.getImage();
         Glide.with(context)
                 .load(imagePath)
+                .placeholder(context.getResources().getDrawable(R.drawable.default_image))
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .into(holder.ad_image);
 

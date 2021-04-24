@@ -528,6 +528,10 @@
         "source": "C:\\Users\\user\\AndroidStudioProjects\\BuyandSellInLebanon\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_add_black_24dp.png"
     },
     {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\BuyandSellInLebanon\\app\\build\\intermediates\\res\\merged\\debug\\drawable_default_image.jpg.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\BuyandSellInLebanon\\app\\src\\main\\res\\drawable\\default_image.jpg"
+    },
+    {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\BuyandSellInLebanon\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_add.png.flat",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\BuyandSellInLebanon\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_add.png"
     },
