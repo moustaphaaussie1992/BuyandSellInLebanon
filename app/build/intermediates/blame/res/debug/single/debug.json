@@ -552,6 +552,10 @@
         "source": "C:\\Users\\Hadi\\AndroidStudioProjects\\BuyandSellInLebanon\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_attach_money_black_24dp.png"
     },
     {
+        "merged": "C:\\Users\\Hadi\\AndroidStudioProjects\\BuyandSellInLebanon\\app\\build\\intermediates\\res\\merged\\debug\\drawable_default_image.jpg.flat",
+        "source": "C:\\Users\\Hadi\\AndroidStudioProjects\\BuyandSellInLebanon\\app\\src\\main\\res\\drawable\\default_image.jpg"
+    },
+    {
         "merged": "C:\\Users\\Hadi\\AndroidStudioProjects\\BuyandSellInLebanon\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_call_black_24dp.png.flat",
         "source": "C:\\Users\\Hadi\\AndroidStudioProjects\\BuyandSellInLebanon\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_call_black_24dp.png"
     },
