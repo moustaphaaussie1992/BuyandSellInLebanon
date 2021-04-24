@@ -59,6 +59,7 @@ public class CategoriesFragment extends Fragment {
                 new CategoriesRVModel(getString(R.string.vehicles), Constants.VEHICLES),
                 new CategoriesRVModel(getString(R.string.properties), Constants.PROPERTIES),
                 new CategoriesRVModel(getString(R.string.mobile_phones_and_accessories), Constants.MOBILES),
+                new CategoriesRVModel(getString(R.string.electronics_and_home_appliances), Constants.ELECTRONICS_AND_HOME_APPLIANCES),
                 new CategoriesRVModel(getString(R.string.home_furniture_and_decor), Constants.HOME_FURNITURE_AND_DECOR),
                 new CategoriesRVModel(getString(R.string.fashion_and_beauty), Constants.FASHION_AND_BEAUTY),
                 new CategoriesRVModel(getString(R.string.pets), Constants.PETS),
@@ -68,8 +69,8 @@ public class CategoriesFragment extends Fragment {
                 new CategoriesRVModel(getString(R.string.jobs), Constants.Jobs),
                 new CategoriesRVModel(getString(R.string.business_and_industrial), Constants.Business_and_Industrial),
                 new CategoriesRVModel(getString(R.string.services), Constants.Services),
-                new CategoriesRVModel(getString(R.string.planting_and_food), Constants.Planting_and_Food)
-               // new CategoriesRVModel(getString(R.string.dollar_market), Constants.DOLLAR_MARKET)
+                new CategoriesRVModel(getString(R.string.planting_and_food), Constants.Planting_and_Food),
+                new CategoriesRVModel(getString(R.string.dollar_market), Constants.DOLLAR_MARKET)
         );
         CategoriesRecyclerViewAdapter categoriesRecyclerViewAdapter = new CategoriesRecyclerViewAdapter(categoriesRVModels, getContext());
         homeRecyclerView.addItemDecoration(new DividerItemDecoration(getContext(),
