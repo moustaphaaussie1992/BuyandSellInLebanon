@@ -33,12 +33,27 @@ public class UserPreferences {
     public static boolean isLoggedIn(Context context) {
         SharedPreferences prefs = context.getSharedPreferences(
                 SHARED_PREF_STRING, Context.MODE_PRIVATE);
+
+//
+//
+//        SharedPreferences.Editor editor = prefs.edit();
+//        editor.putString("username", "hadi");
+//        editor.commit();
+//        return true;
+
+
         String isLogged = prefs.getString("isloggedin", "0");
         if (isLogged.equals("1")) {
             return true;
         } else {
             return false;
         }
+
+
+
+
+
+
     }
 
     public static String getDisplayName(Context context) {

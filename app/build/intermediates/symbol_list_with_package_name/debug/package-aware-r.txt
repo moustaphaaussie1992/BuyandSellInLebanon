@@ -29,6 +29,7 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+animator search
 attr action
 attr actionBarDivider
 attr actionBarItemBackground
@@ -1154,6 +1155,7 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_notifications_none_black_24dp
 drawable ic_person_outline_black_24dp
+drawable ic_search
 drawable ic_share_black_24dp
 drawable ic_title_black_24dp
 drawable money
@@ -1175,6 +1177,7 @@ drawable notify_panel_notification_icon_bg
 drawable paint
 drawable pawprint
 drawable sadface
+drawable share
 drawable side_nav_bar
 drawable smartphone
 drawable support
@@ -1241,6 +1244,7 @@ id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
 id action_noti
+id action_search
 id action_text
 id actions
 id activity_chooser_view_content
@@ -1673,6 +1677,7 @@ layout support_simple_spinner_dropdown_item
 layout vehicles_item
 menu activity_main_drawer
 menu create_ad_menu
+menu custom_menu
 menu main
 mipmap ic_launcher
 mipmap ic_launcher_foreground

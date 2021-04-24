@@ -39,8 +39,9 @@ public class NetworkHelper {
     public static final String ACTION_GET_ONE_AD = "mobile/get-one-ad";
     public static final String ACTION_GET_AD_DETAIL = "mobile/get-ad-detail-by-ad-id";
     public static final String ACTION_GET_AD = "mobile/get-ad-by-ad-id";
-    public static final String ACTION_ADS_BY_USER = "mobile/ads-by-user";
     public static final String ACTION_REMOVE_AD = "mobile/remove-ad-by-id";
+    public static final String ACTION_ADS_BY_USER = "mobile/ads-by-user";
+    public static final String ACTION_ADS_BY_SEARCH = "mobile/ads-by-search";
     public static final String ACTION_AD_COMMENT = "mobile/create-ad-comment";
     public static final String ACTION_GET_AD_COMMENTS = "mobile/get-ad-comments";
 
