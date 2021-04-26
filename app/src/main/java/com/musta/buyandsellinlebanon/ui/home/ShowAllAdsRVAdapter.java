@@ -57,6 +57,7 @@ public class ShowAllAdsRVAdapter extends RecyclerView.Adapter<ShowAllAdsRVAdapte
         public ImageView ad_image;
         public TextView textViewTitle;
         public TextView textViewPrice;
+        public TextView textViewViews;
         public TextView textViewCreetionDate;
         public TextView textViewPlace;
         public Button shareAdButton;
@@ -68,6 +69,7 @@ public class ShowAllAdsRVAdapter extends RecyclerView.Adapter<ShowAllAdsRVAdapte
             ad_image = view.findViewById(R.id.ad_image);
             textViewTitle = view.findViewById(R.id.title);
             textViewPrice = view.findViewById(R.id.price);
+            textViewViews = view.findViewById(R.id.views);
             textViewCreetionDate = view.findViewById(R.id.creation_date);
             textViewPlace = view.findViewById(R.id.place_name);
 
@@ -105,11 +107,15 @@ public class ShowAllAdsRVAdapter extends RecyclerView.Adapter<ShowAllAdsRVAdapte
         final String imagePath = NetworkHelper.IMAGES_PATH + showAd.getImage();
         Glide.with(context)
                 .load(imagePath)
-                .placeholder(context.getResources().getDrawable(R.drawable.default_image))
+                .placeholder(context.getResources().getDrawable(R.drawable.default_image_with_border))
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .into(holder.ad_image);
+        String title = showAd.getTitle();
+        if(title.length()>45){
+        title =  title.substring(0, Math.min(title.length(), 40));
+        title = title+"...";}
 
-        holder.textViewTitle.setText(showAd.getTitle());
+        holder.textViewTitle.setText(title);
         String priceUnitStr = "";
         if (showAd.getPrice_unit().equals("dollar")) {
             priceUnitStr = context.getString(R.string.dollar);
@@ -119,6 +125,8 @@ public class ShowAllAdsRVAdapter extends RecyclerView.Adapter<ShowAllAdsRVAdapte
         holder.textViewPrice.setText(showAd.getPrice() + priceUnitStr);
         holder.textViewCreetionDate.setText(showAd.getCreation_date().substring(0, 10));
         holder.textViewPlace.setText(showAd.getPlace_name());
+        holder.textViewViews.setText(showAd.getViews());
+        Log.d("in show all ads adap", "views: "+showAd.getViews());
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -129,6 +137,9 @@ public class ShowAllAdsRVAdapter extends RecyclerView.Adapter<ShowAllAdsRVAdapte
                 intent.putExtra("placeName", showAd.getPlace_name());
                 intent.putExtra("description", showAd.getDescription());
                 intent.putExtra("phone", showAd.getPhone());
+                intent.putExtra("views", showAd.getViews());
+                Log.d("TAG", "onClick: "+showAd.getViews());
+
                 String priceUnitStr = "";
                 if (showAd.getPrice_unit().equals("dollar")) {
                     priceUnitStr = context.getString(R.string.dollar);

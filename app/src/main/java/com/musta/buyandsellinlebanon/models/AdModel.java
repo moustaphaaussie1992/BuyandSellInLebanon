@@ -22,6 +22,8 @@ public class AdModel {
     String place_name_en;
     @SerializedName("place_name_ar")
     String place_name_ar;
+    @SerializedName("views")
+    String views;
 
     public String getId() {
         return id;
@@ -29,6 +31,14 @@ public class AdModel {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getViews() {
+        return views;
+    }
+
+    public void setViews(String views) {
+        this.views = views;
     }
 
     public String getTitle() {

@@ -22,7 +22,8 @@ public class ShowAllAdsModel {
     String creation_date;
     @SerializedName("phone")
     String phone;
-
+    @SerializedName("views")
+    String views;
     public ShowAllAdsModel() {
     }
 
@@ -32,6 +33,13 @@ public class ShowAllAdsModel {
 
     public void setId(String id) {
         this.id = id;
+    }
+    public String getViews() {
+        return views;
+    }
+
+    public void setViews(String views) {
+        this.views = views;
     }
 
     public String getDescription() {
