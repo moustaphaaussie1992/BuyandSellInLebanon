@@ -1,4 +1,4 @@
-# Referenced at C:\Users\Hadi\AndroidStudioProjects\BuyandSellInLebanon\app\build\intermediates\merged_manifests\debug\AndroidManifest.xml:36
+# Referenced at C:\Users\user\AndroidStudioProjects\BuyandSellInLebanon\app\build\intermediates\merged_manifests\debug\AndroidManifest.xml:36
 -keep class androidx.core.app.CoreComponentFactory { <init>(); }
-# Referenced at C:\Users\Hadi\AndroidStudioProjects\BuyandSellInLebanon\app\build\intermediates\merged_manifests\debug\AndroidManifest.xml:36
+# Referenced at C:\Users\user\AndroidStudioProjects\BuyandSellInLebanon\app\build\intermediates\merged_manifests\debug\AndroidManifest.xml:36
 -keep class androidx.multidex.MultiDexApplication { <init>(); }
