@@ -111,8 +111,8 @@ public class ShowAllAdsRVAdapter extends RecyclerView.Adapter<ShowAllAdsRVAdapte
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .into(holder.ad_image);
         String title = showAd.getTitle();
-        if(title.length()>45){
-        title =  title.substring(0, Math.min(title.length(), 40));
+        if(title.length()>30){
+        title =  title.substring(0, Math.min(title.length(), 30));
         title = title+"...";}
 
         holder.textViewTitle.setText(title);
