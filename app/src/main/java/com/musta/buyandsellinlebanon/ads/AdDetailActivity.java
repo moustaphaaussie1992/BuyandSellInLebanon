@@ -37,6 +37,8 @@ import com.musta.buyandsellinlebanon.ads.models.AdDetailModel;
 import com.musta.buyandsellinlebanon.ads.models.AdDetailPicturesModel;
 import com.musta.buyandsellinlebanon.ads.models.Comments;
 import com.musta.buyandsellinlebanon.preferences.UserPreferences;
+import com.musta.buyandsellinlebanon.ui.home.ShowAllAdsRVAdapter;
+import com.musta.buyandsellinlebanon.ui.home.models.ShowAllAdsModel;
 import com.musta.buyandsellinlebanon.utils.FirebaseUtils;
 import com.musta.buyandsellinlebanon.utils.network.GsonRequest;
 import com.musta.buyandsellinlebanon.utils.network.NetworkHelper;
@@ -44,9 +46,12 @@ import com.musta.buyandsellinlebanon.utils.network.VolleySingleton;
 import com.rd.PageIndicatorView;
 import com.rd.animation.type.AnimationType;
 
+import org.json.JSONObject;
+
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Hashtable;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
@@ -58,6 +63,7 @@ public class AdDetailActivity extends AppCompatActivity {
     PageIndicatorView pageIndicatorView;
     LinearLayout detailsLayout;
     TextView description;
+    TextView views;
     String phoneStr;
     Button shareAdButton, btnSend;
     EditText textInput;
@@ -70,6 +76,7 @@ public class AdDetailActivity extends AppCompatActivity {
 
 
         description = findViewById(R.id.description);
+        views = findViewById(R.id.views);
         pictures_viewpager = findViewById(R.id.pictures_viewpager);
         pageIndicatorView = findViewById(R.id.pageIndicatorView);
         detailsLayout = findViewById(R.id.detailsLayout);
@@ -93,6 +100,7 @@ public class AdDetailActivity extends AppCompatActivity {
             String placeName = intent.getExtras().getString("placeName");
             String price = intent.getExtras().getString("price");
             final String descriptionStr = intent.getExtras().getString("description");
+            final String viewsStr = intent.getExtras().getString("views");
             phoneStr = intent.getExtras().getString("phone");
 
             addDetailListItem(getString(R.string.title), title);
@@ -101,6 +109,38 @@ public class AdDetailActivity extends AppCompatActivity {
             addDetailListItem(getString(R.string.place), placeName);
             addDetailListItem(getString(R.string.phone), phoneStr);
             description.setText(descriptionStr);
+            views.setText(viewsStr);
+
+
+            // volley add view
+            String      url1 = NetworkHelper.getUrl(NetworkHelper.ACTION_VIEWS_OF_POST);
+
+            StringRequest sr = new StringRequest(Request.Method.POST,url1, new Response.Listener<String>() {
+                @Override
+                public void onResponse(String response) {
+
+                }
+            }, new Response.ErrorListener() {
+                @Override
+                public void onErrorResponse(VolleyError error) {
+
+                }
+            }){
+                @Override
+                protected Map<String,String> getParams(){
+                    Map<String,String> params2 = new HashMap<String, String>();
+                    params2.put("postId",adId);
+
+
+                    return params2;
+                }
+
+
+            };
+
+
+
+            VolleySingleton.getInstance(this).addToRequestQueue(sr);
 
             // volley
             String url = NetworkHelper.getUrl(NetworkHelper.ACTION_GET_AD_DETAIL);

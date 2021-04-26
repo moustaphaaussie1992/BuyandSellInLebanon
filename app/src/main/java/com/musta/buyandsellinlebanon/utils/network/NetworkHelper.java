@@ -22,8 +22,9 @@ public class NetworkHelper {
 //    public static final String SERVER_IP = "192.168.43.113/buy_and_sell_in_lebanon";
 //    public static final String SERVER_IP = "192.168.43.78/buy_and_sell_in_lebanon";
 //    public static final String SERVER_IP = "192.168.43.78/buy_and_sell_in_lebanon";
-    public static final String SERVER_IP = "5.189.150.68/buy_and_sell_in_lebanon";
+//    public static final String SERVER_IP = "192.168.2.202/buy_and_sell_in_lebanon";
 
+    public static final String SERVER_IP = "5.189.150.68/buy_and_sell_in_lebanon";
 
     public static final String IMAGES_PATH = "http://" + SERVER_IP + "/web/imagesads/";
     public static final String IMAGES_PATH_DOLLAR = "http://" + SERVER_IP + "/web/dollartobeviedinshare.jpg";
@@ -32,6 +33,7 @@ public class NetworkHelper {
     public static final String ACTION_GET_COUNT_OF_READ = "mobile/count-of-unread";
     public static final String ACTION_GET_NOTIFICATIONS = "mobile/notifications";
     public static final String ACTION_GET_ALL_DATA = "mobile/get-all-data";
+    public static final String ACTION_VIEWS_OF_POST = "mobile/views-of-post";
     public static final String ACTION_CREATE_AD = "mobile/upload-test";
     public static final String ACTION_GET_SHOW_CARS_ADS = "mobile/show-cars-ads";
     public static final String ACTION_REGISTER_CLIENT = "mobile/register-client";

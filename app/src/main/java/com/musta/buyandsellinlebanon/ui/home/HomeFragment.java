@@ -112,12 +112,14 @@ public class HomeFragment extends Fragment {
 
         // volley
         String url = NetworkHelper.getUrl(NetworkHelper.ACTION_GET_SHOW_ALL_ADS);
+        Log.d("url", "onViewCreated: "+url);
         Map<String, String> params = new HashMap();
         params.put("adType", "all");
         GsonRequest<ShowAllAdsModel[]> myGsonRequest = new GsonRequest<ShowAllAdsModel[]>(Request.Method.POST, url, ShowAllAdsModel[].class, null, params,
                 new Response.Listener<ShowAllAdsModel[]>() {
                     @Override
                     public void onResponse(ShowAllAdsModel[] response) {
+
                         dialog.dismiss();
                         ShowAllAdsRVAdapter showAllAdsRVAdapter = new ShowAllAdsRVAdapter(Arrays.asList(response),getContext());
                         recyclerviewHome.setAdapter(showAllAdsRVAdapter);
@@ -126,6 +128,7 @@ public class HomeFragment extends Fragment {
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
+
                         dialog.dismiss();
                         NetworkHelper.handleError(error);
                     }

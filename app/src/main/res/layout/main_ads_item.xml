@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="130dp"
+    android:layout_height="160dp"
     android:layout_margin="10dp"
     android:elevation="4dp"
     android:background="#FFFF"
@@ -15,19 +15,19 @@
     android:orientation="horizontal">
     <ImageView
         android:id="@+id/ad_image"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
 
         android:scaleType="center" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginLeft="3dp"
-        android:layout_marginBottom="10dp"
+
+
+
+
+
         android:orientation="vertical">
 
 
@@ -36,7 +36,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
-            android:textSize="12dp"
+            android:textSize="14dp"
             android:textColor="#000000"
             android:fontFamily="@font/volkorn"
             android:text=""></TextView>
@@ -46,22 +46,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
-            android:textSize="15dp"
+            android:textSize="16dp"
             android:textStyle="bold"
             android:text=""
             android:textColor="#00a3cc" />
+
         <View
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#d3d3d3"
+            android:layout_height="3dp"
             android:layout_marginTop="5dp"
-            />
+            android:background="#d3d3d3" />
         <TextView
             android:id="@+id/creation_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
-            android:textSize="10sp"
+            android:textSize="12sp"
             android:textColor="#9a9a9a"
 
             android:text=""></TextView>
@@ -72,7 +72,17 @@
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:textColor="#9a9a9a"
-            android:textSize="10sp"
+            android:textSize="12sp"
+            android:fontFamily="@font/volkorn"
+            android:text=""></TextView>
+        <TextView
+            android:id="@+id/views"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_eye"
+            android:layout_gravity="right"
+            android:textColor="#9a9a9a"
+            android:textSize="12sp"
             android:fontFamily="@font/volkorn"
             android:text=""></TextView>
 
@@ -82,59 +92,30 @@
 
 
 
+<View
+    android:layout_width="0dp"
+    android:layout_height="1dp"
+    android:layout_weight="1"></View>
 
 
 
 
-
-
-
-
-
-
-
-
-<!--            <ImageView-->
-
-
-<!--                android:layout_width="25dp"-->
-<!--                android:layout_height="25dp"-->
-<!--                android:layout_gravity="center"-->
-
-<!--                android:src="@drawable/ic_location_on_black_24dp"-->
-<!--                android:textColor="#9A9A9A"-->
-<!--                android:button="@null"-->
-<!--                android:layout_marginRight="5dp"-->
-<!--                android:checked="false" />-->
 
 
         <Button
             android:id="@+id/shareAdButton"
-            style="@style/Widget.AppCompat.Button.Borderless.Colored"
-            android:layout_width="227dp"
-            android:layout_height="40dp"
-            android:drawableStart="@drawable/share"
-            android:textSize="14dp"
-            android:gravity="center"
-            android:padding="5dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_weight="1"
+
+
+            android:background="#00a3cc"
+
             android:text="@string/share_this_ad"
-            android:textColor="#00a3cc" />
 
-
-
-
-
-
-
-
-
-
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="1dp"
-            android:layout_weight="1"></View>
-
+            android:textColor="#fff"
+            android:textSize="14dp" />
 
 
     </LinearLayout>
