@@ -1859,6 +1859,7 @@ string luggage
 string makeup_and_cosmetics
 string manual
 string medical_and_wellbeing_equipment
+string menu_all_ads
 string menu_gallery
 string menu_home
 string menu_review

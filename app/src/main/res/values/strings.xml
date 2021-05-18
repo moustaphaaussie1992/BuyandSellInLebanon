@@ -68,7 +68,7 @@
     <string name="please_wait">Please wait...</string>
     <string name="vehicles_accessories">Vehicles Accessories</string>
     <string name="spare_parts">Spare Parts</string>
-    <string name="trucks_and_buses">Trchks And Buses</string>
+    <string name="trucks_and_buses">Trucks And Buses</string>
     <string name="motorcycles">Motorcycles</string>
     <string name="number_plates">Number Plates</string>
     <string name="boats">Boats</string>
@@ -198,4 +198,5 @@
     <string name="you_have_no_notification">You have no notification yet !!</string>
     <string name="commented">commented</string>
     <string name="on_your_ad">on an ad</string>
+    <string name="menu_all_ads">All Ads</string>
 </resources>

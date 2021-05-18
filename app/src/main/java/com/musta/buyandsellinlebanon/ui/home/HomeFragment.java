@@ -72,21 +72,21 @@ public class HomeFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         reviewAppButton = view.findViewById(R.id.reviewAppButton);
-        if (!ReviewPreferences.isReviewed(getContext())) {
-            reviewAppButton.setVisibility(View.VISIBLE);
-            reviewAppButton.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    try {
-                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID)));
-                    } catch (android.content.ActivityNotFoundException anfe) {
-                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID)));
-                    }
-                    ReviewPreferences.reviewing(getContext());
-                    reviewAppButton.setVisibility(View.GONE);
-                }
-            });
-        }
+//        if (!ReviewPreferences.isReviewed(getContext())) {
+//            reviewAppButton.setVisibility(View.VISIBLE);
+//            reviewAppButton.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                    try {
+//                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID)));
+//                    } catch (android.content.ActivityNotFoundException anfe) {
+//                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID)));
+//                    }
+//                    ReviewPreferences.reviewing(getContext());
+//                    reviewAppButton.setVisibility(View.GONE);
+//                }
+//            });
+//        }
 
 //        create_new_ad = view.findViewById(R.id.create_new_ad);
 //        create_new_ad.setOnClickListener(new View.OnClickListener() {

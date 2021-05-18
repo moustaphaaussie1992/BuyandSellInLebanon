@@ -194,4 +194,7 @@
     <string name="date_dollar">التاريخ</string>
     <string name="menu_share_dollar">نشر السعر</string>
     <string name="collect_and_win">إجمع واربح</string>
+    <string name="menu_all_ads">كل الإعلانات</string>
+    <string name="on_your_ad">على إعلانك</string>
+    <string name="commented">علق</string>
 </resources>

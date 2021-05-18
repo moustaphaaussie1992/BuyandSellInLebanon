@@ -69,8 +69,7 @@ public class CategoriesFragment extends Fragment {
                 new CategoriesRVModel(getString(R.string.jobs), Constants.Jobs),
                 new CategoriesRVModel(getString(R.string.business_and_industrial), Constants.Business_and_Industrial),
                 new CategoriesRVModel(getString(R.string.services), Constants.Services),
-                new CategoriesRVModel(getString(R.string.planting_and_food), Constants.Planting_and_Food),
-                new CategoriesRVModel(getString(R.string.dollar_market), Constants.DOLLAR_MARKET)
+                new CategoriesRVModel(getString(R.string.planting_and_food), Constants.Planting_and_Food)
         );
         CategoriesRecyclerViewAdapter categoriesRecyclerViewAdapter = new CategoriesRecyclerViewAdapter(categoriesRVModels, getContext());
         homeRecyclerView.addItemDecoration(new DividerItemDecoration(getContext(),
