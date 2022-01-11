@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -60,7 +61,7 @@ public class ShowAllAdsRVAdapter extends RecyclerView.Adapter<ShowAllAdsRVAdapte
         public TextView textViewViews;
         public TextView textViewCreetionDate;
         public TextView textViewPlace;
-        public Button shareAdButton;
+        public RelativeLayout shareAdButton;
         public EditText editText;
 
 
@@ -94,7 +95,7 @@ public class ShowAllAdsRVAdapter extends RecyclerView.Adapter<ShowAllAdsRVAdapte
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         context = parent.getContext();
         View itemView = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.main_ads_item, parent, false);
+                .inflate(R.layout.new_post_item, parent, false);
         return new MyViewHolder(itemView);
     }
 
@@ -126,6 +127,7 @@ public class ShowAllAdsRVAdapter extends RecyclerView.Adapter<ShowAllAdsRVAdapte
         holder.textViewCreetionDate.setText(showAd.getCreation_date().substring(0, 10));
         holder.textViewPlace.setText(showAd.getPlace_name());
         holder.textViewViews.setText(showAd.getViews());
+
         Log.d("in show all ads adap", "views: "+showAd.getViews());
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -1095,6 +1095,7 @@ drawable buysellicon
 drawable call
 drawable car
 drawable children
+drawable circle
 drawable cleaner
 drawable coin
 drawable common_full_open_on_phone
@@ -1145,6 +1146,7 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_list_black_24dp
 drawable ic_location_on_black_24dp
+drawable ic_location_svgrepo_com
 drawable ic_menu_camera
 drawable ic_menu_gallery
 drawable ic_menu_home
@@ -1159,7 +1161,9 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_notification
 drawable ic_notifications_none_black_24dp
 drawable ic_person_outline_black_24dp
+drawable ic_price_tag_svgrepo_com
 drawable ic_search
+drawable ic_share
 drawable ic_share_black_24dp
 drawable ic_title_black_24dp
 drawable money
@@ -1178,8 +1182,11 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable number_back
 drawable paint
 drawable pawprint
+drawable post_background
+drawable price_back
 drawable sadface
 drawable share
 drawable side_nav_bar
@@ -1190,6 +1197,7 @@ drawable text_box_layout
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable whatsapp
+font helv
 font volkorn
 id ALT
 id CTRL
@@ -1336,6 +1344,7 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id eye
 id fill
 id fill_horizontal
 id fill_vertical
@@ -1347,6 +1356,7 @@ id glide_custom_view_target_tag
 id gone
 id group_divider
 id groups
+id heart_icon
 id home
 id homeAsUp
 id homeRecyclerView
@@ -1657,6 +1667,7 @@ layout main_ads_item
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout nav_header_main
+layout new_post_item
 layout notification_action
 layout notification_action_tombstone
 layout notification_item
